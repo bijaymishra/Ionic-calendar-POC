@@ -1,0 +1,12 @@
+{
+  "name": "ionic-angular-cordova-seed",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

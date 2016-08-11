@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.services', 'starter.controllers', 'ui.rCalendar'])
 
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -58,6 +58,16 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       views: {
         'about-tab': {
           templateUrl: 'templates/about.html'
+        }
+      }
+    })
+    .state('tab.calendar', {
+      url: '/calendar',
+      views: {
+        'about-tab': {
+          templateUrl: 'templates/calendar.html',
+          controller : 'CalendarDemoCtrl'
+
         }
       }
     });
